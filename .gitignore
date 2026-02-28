@@ -1,0 +1,9 @@
+# 모든 파일/디렉토리 무시
+*
+
+# html 디렉토리만 허용
+!html/
+!html/**
+
+# .gitignore 자체도 추적
+!.gitignore
