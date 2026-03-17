@@ -11,6 +11,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-084L4GLDJ1');
+    var params = new URLSearchParams(window.location.search);
+    var utmSource = params.get('utm_source') || '(direct)';
+    var utmCampaign = params.get('utm_campaign') || '(none)';
+    gtag('event', 'product_click', {
+      product_name: 'coupang_d2Qhvt',
+      platform: 'coupang',
+      destination_url: 'https://link.coupang.com/a/d2Qhvt',
+      traffic_source: utmSource,
+      blog_post: utmCampaign
+    });
     // GA4 로드 후 리다이렉트 (1.5초 딜레이)
     setTimeout(function(){ window.location.replace("https://link.coupang.com/a/d2Qhvt"); }, 1500);
   </script>
