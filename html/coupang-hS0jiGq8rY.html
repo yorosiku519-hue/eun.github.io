@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>쿠팡 상품으로 이동</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-084L4GLDJ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-084L4GLDJ1');
+    let redirected = false;
+    function go() {
+      if (redirected) return;
+      redirected = true;
+      window.location.replace('https://link.coupang.com/a/hS0jiGq8rY');
+    }
+    gtag('event', 'affiliate_redirect', {
+      destination: 'coupang',
+      link_url: 'https://link.coupang.com/a/hS0jiGq8rY',
+      transport_type: 'beacon',
+      event_callback: go,
+      event_timeout: 2000
+    });
+    window.setTimeout(go, 2500);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://link.coupang.com/a/hS0jiGq8rY"></noscript>
+</head>
+<body>
+  <p>쿠팡 상품 페이지로 이동 중입니다.</p>
+  <p>자동으로 이동하지 않으면 <a href="https://link.coupang.com/a/hS0jiGq8rY">여기를 눌러주세요.</a></p>
+</body>
+</html>
